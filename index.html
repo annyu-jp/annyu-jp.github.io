@@ -2,8 +2,36 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Annyu's Homeworks</title>
   </head>
   <body>
-    Welcome to my website!
+    <div id="container">
+      <div id="header-1">▲ 変換</div>
+      <div id="content-1">
+        <div>
+          <span>エンコード済みテキスト:</span><br><textarea id="encoded"></textarea>
+        </div>
+        <div id="button-container">
+          <div id="conversion-buttons">
+            <button id="decode">↓ デコード</button>
+            <button id="encode">↑ エンコード</button>
+          </div>
+        </div>
+        <div>
+          <span>デコード済みテキスト:</span><br><textarea id="decoded"></textarea>
+        </div>
+      </div>
+      <div id="header-2">▼ 検索</div>
+      <div id="content-2">
+        <ul>
+          <li><p>#1&nbsp;<input type="text" name="q"></p></li>
+          <li><p>#2&nbsp;<input type="text" name="s"></p></li>
+          <li><p>#3&nbsp;<input type="text" name="captcha"></p></li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
